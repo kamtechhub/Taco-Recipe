@@ -11,6 +11,7 @@ const recipeJSON =
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.set('view engine', 'ejs'); 
+app.set('views', './views');
 let data; 
 
 app.get("/", (req, res) => {
